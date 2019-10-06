@@ -8,7 +8,7 @@ The way that this big string is organized is like this:
 
 Most part of security technologies uses a tool called [imphash](https://github.com/erocarrera/pefile) to calculate the import table hash from a PE file and due to it wimphash uses a database called ordlookup (used by imphash) to calculate the hash from 2 specific DLL (exactly like pefile). This is not a good idea, but it's necessary to match with all the other tools which uses imphash (e.g VirusTotal).
 
-The diference between this tool and the others is the simple fact that this is a tool created in C, uses only windows functions and access the file from memory, ensuring no dependencies and a better compatibility.
+The diference between this tool and the others is the simple fact that this is a tool created in C, ensuring no dependencies and a better compatibility.
 
 Comments, suggestions and feedbacks are always welcome!!
 
