@@ -3,9 +3,9 @@
 *
 *	libwimp.h
 *
-* 	Author: Leandro Fróes
+* 	Author: Leandro FrÃ³es
 *
-*	Copyright (C) 2019 Leandro Fróes
+*	Copyright (C) 2019 Leandro FrÃ³es
 *
 *	This program is free software: you can redistribute it and/or modify
 *	it under the terms of the GNU General Public License as published by
@@ -28,8 +28,8 @@
 #include <ctype.h>
 #include <string.h>
 
-#define MAX_DLL_NAME 512
-#define MAX_FUNCTION_NAME 256
+#define MAX_DLL_NAME 256
+#define MAX_FUNCTION_NAME 512
 
 #define MD5LEN 16
 
