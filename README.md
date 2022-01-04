@@ -1,16 +1,6 @@
 # wimphash
 
-Wimphash is a tool to get MD5 hash from Import Table. The idea is use Windows API functions to map a file in memory and parse PE Structures to get DLL names and import (function) names. After that the tool put everything together in a string and get the MD5 hash from it.
-
-The way that this big string is organized is like this:
-
-```kernel32.deletecriticalsection,kernel32.entercriticalsection,kernel32.exitprocess```
-
-Most part of security technologies uses a tool called [imphash](https://github.com/erocarrera/pefile) to calculate the import table hash from a PE file and due to it wimphash uses a database called ordlookup (used by imphash) to calculate the hash from 2 specific DLL (exactly like pefile). This is not a good idea, but it's necessary to match with all the other tools which uses imphash (e.g VirusTotal).
-
-The diference between this tool and the others is the simple fact that this is a tool created in C, ensuring no dependencies and a better compatibility.
-
-Comments, suggestions and feedbacks are always welcome!!
+Wimphash is a C version of [imphash](https://github.com/erocarrera/pefile). Please note that this is only a PoC I created while studying about PECOFF.
 
 ## **Usage**
 
@@ -45,10 +35,6 @@ C:\Users\user01\dir\test3.exe:
 ce98018b85b0454843035df8b2e3bc2a
 
 ```
-
-## **Future Features**
-
-- Support for x64 PE Files (PE32+)
 
 ## **License**
 
